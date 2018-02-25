@@ -1,6 +1,10 @@
 exports = module.exports = [
     //Dashoboard
     ['/dashboard',
+        'dashboard-controller#render',
+        'GET'],
+
+    ['/api/v1/dashboard',
         'dashboard-controller#get',
         'GET'],
 

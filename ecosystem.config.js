@@ -7,7 +7,7 @@ module.exports = {
     {
       name        : "pubsub-simulator",
       script      : "bin/www",
-      instances  : 0,
+      instances  : 1,
       exec_mode  : "cluster",
       // watch: ['app.js', 'routes.js', 'ecosystem.config.js', 'controllers', 'middlewares', 'config', 'db'],
       merge_logs: true,
