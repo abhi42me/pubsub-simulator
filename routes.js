@@ -1,5 +1,10 @@
 exports = module.exports = [
-     //Exchange
+    //Dashoboard
+    ['/dashboard',
+        'dashboard-controller#get',
+        'GET'],
+
+    //Exchange
     ['/api/v1/exchange/:exchange_name',
         'exchange-controller#get',
         'GET'],

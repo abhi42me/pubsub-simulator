@@ -12,7 +12,7 @@ module.exports = {
       // watch: ['app.js', 'routes.js', 'ecosystem.config.js', 'controllers', 'middlewares', 'config', 'db'],
       merge_logs: true,
       env: {
-        PORT: "3000"
+        PORT: "1702"
       },
       env_development: {
         NODE_ENV: "development"

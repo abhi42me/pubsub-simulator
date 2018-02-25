@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  table
+      tr
+        th Exchange Name
+        th Queue & Routing Info
+      for data in exchange_data
+        tr
+           td= data.name
+           td
+              ul
+                for queue in data.queues
+                   li= queue.name + "(" + queue.message_count + ")"
+                       ul
+                            for key in queue.routing_keys
+                                li= key
+
